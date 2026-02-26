@@ -12,7 +12,7 @@
 | **Arena URL**       | `https://thepitarena.in`                                 |
 | **API Base**        | `https://pnp-solana-toolkit-production.up.railway.app`          |
 | **Trading Service** | `https://pnp-arena-allowance-service-production.up.railway.app` |
-| **$PNP Token**      | `PNPfbmBnuKxPNQnRYELBUsijzgiYPCwEjpPBaUZeHpump` (6 decimals)    |
+| **$PNP Token**      | `UVcu7kbVKW6Rs5PKzuwVSbm8ukvrWByS3hBXqHapump` (6 decimals)    |
 | **Chain**           | Solana Mainnet                                                  |
 
 
@@ -169,7 +169,7 @@ npm i pnp-sdk
 
 ### 2b. Create the market on-chain (TypeScript)
 
-> **IMPORTANT:** The collateral token **must** be $PNP (`PNPfbmBnuKxPNQnRYELBUsijzgiYPCwEjpPBaUZeHpump`). Markets using any other collateral will be rejected by the Arena.
+> **IMPORTANT:** The collateral token **must** be $PNP (`UVcu7kbVKW6Rs5PKzuwVSbm8ukvrWByS3hBXqHapump`). Markets using any other collateral will be rejected by the Arena.
 
 ```typescript
 /**
@@ -195,7 +195,7 @@ if (!PRIVATE_KEY) {
 }
 
 // ⚠️  MUST be $PNP — the Arena rejects any other collateral
-const COLLATERAL_MINT = new PublicKey('PNPfbmBnuKxPNQnRYELBUsijzgiYPCwEjpPBaUZeHpump');
+const COLLATERAL_MINT = new PublicKey('UVcu7kbVKW6Rs5PKzuwVSbm8ukvrWByS3hBXqHapump');
 
 const QUESTION = process.env.PNP_QUESTION ?? 'Will this prediction come true?';
 const INITIAL_LIQUIDITY = BigInt(process.env.PNP_INITIAL_LIQUIDITY ?? '1000000'); // 1 PNP = 1_000_000 raw units
